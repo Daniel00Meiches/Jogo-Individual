@@ -67,7 +67,7 @@ class GameScene extends Phaser.Scene {
 
         // Animando as plataformas para mover de um lado para o outro
         this.tweens.add({
-            targets: evilplatform1,          // O objeto que vai ser animado, platform1
+            targets: evilplatform1,      // O objeto que vai ser animado, platform1
             x: 200,                      // A posição final da plataforma no eixo x (vai de 600 para 200)
             duration: 9000,              // Duração da animação (9 segundos)
             ease: 'Linear',              // Movimento constante
@@ -76,7 +76,7 @@ class GameScene extends Phaser.Scene {
         });
 
         this.tweens.add({
-            targets: platform,          // O objeto que vai ser animado, platform1
+            targets: platform,           // O objeto que vai ser animado, platform1
             x: 600,                      // A posição final da plataforma no eixo x (vai de 200 para 600)
             duration: 9000,              // Duração da animação (9 segundos)
             ease: 'Linear',              // Movimento constante
@@ -129,13 +129,6 @@ class GameScene extends Phaser.Scene {
             frames: [ { key: 'duck', frame: 7 } ],
             repeat: 0
         })
-
-        // ----------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-        // ----------------------------------------------------------------------------------------------------------------------------------------
-
     };
 
     update() {
@@ -187,8 +180,6 @@ class GameScene extends Phaser.Scene {
                     player.anims.play('fall', true); // Velocidade Y positiva do player = player está caindo. Assim, a animação 'fall' é iniciada
 
                 }
-            }        
-        // Atualizar a pontuação na tela
-        scoreText.setText('Score: ' + score);
+            }
         }
     }
