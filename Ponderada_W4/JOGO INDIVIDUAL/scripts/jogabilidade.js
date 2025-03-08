@@ -1,6 +1,8 @@
 // Criando a var player e a var score fora da classe para que ela possa ser chamada em qualquer ponto do código
 var player;
+var coins;
 var score = 0;
+var scoreText;
 
 class GameScene extends Phaser.Scene {
     constructor() {
@@ -13,11 +15,11 @@ class GameScene extends Phaser.Scene {
         this.load.image('walls', 'assets/wall.png');
         this.load.image('gameBG', 'assets/game_bg.png');
         this.load.image('pipe', 'assets/pipe.png');
+        this.load.image('coin', 'assets/coin.png');
         
         // Imagem do objetos do jogo: target e plataformas
         this.load.image('target', 'assets/target.png');
-        this.load.image('evil1', 'assets/evil_platform1.png');
-        this.load.image('evil2', 'assets/evil_platform2.png');
+        this.load.image('evil', 'assets/evil_platform1.png');
         this.load.image('plat', 'assets/platform.png');
 
         // Carregando as spritesheets do personagem, um objeto associado ao personagem e o inimigo
@@ -41,17 +43,16 @@ class GameScene extends Phaser.Scene {
 
         // ----------------------------------------------------------------------------------------------------------------------------------------
         
+        // Criando 5 canos diferentes uando um loop for
         for (let i = 0; i < 5; i++) {
-            
             this.add.image(150 + i * 125, 50, 'pipe').setDepth(5);
-
         }
 
         // ----------------------------------------------------------------------------------------------------------------------------------------
 
 
         // Criando 2 plataformas diferentes
-        const evilplatform1 = this.physics.add.image(600, 450, 'evil1');
+        const evilplatform1 = this.physics.add.image(600, 450, 'evil');
         evilplatform1.setDepth(5);
         evilplatform1.setImmovable(true);
         evilplatform1.body.setSize(evilplatform1.width, evilplatform1.height); // Dimensões do hitbox da platform1
@@ -128,9 +129,16 @@ class GameScene extends Phaser.Scene {
             frames: [ { key: 'duck', frame: 7 } ],
             repeat: 0
         })
+
+        // ----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        // ----------------------------------------------------------------------------------------------------------------------------------------
+
     };
 
-    update() {;
+    update() {
         
         // Possibilitando que o teclado seja pressionado
         var cursors = this.input.keyboard.createCursorKeys();
@@ -179,7 +187,8 @@ class GameScene extends Phaser.Scene {
                     player.anims.play('fall', true); // Velocidade Y positiva do player = player está caindo. Assim, a animação 'fall' é iniciada
 
                 }
-            }
+            }        
+        // Atualizar a pontuação na tela
+        scoreText.setText('Score: ' + score);
+        }
     }
-
-}
