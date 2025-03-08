@@ -1,8 +1,5 @@
 // Criando a var player e a var score fora da classe para que ela possa ser chamada em qualquer ponto do código
 var player;
-var coins;
-var score = 0;
-var scoreText;
 
 class GameScene extends Phaser.Scene {
     constructor() {
