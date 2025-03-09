@@ -180,10 +180,12 @@ class GameScene extends Phaser.Scene {
         }
     }
 
+    // Função de game over, quando o jogador interagir com a evilplatform1
     platTouch (player, evilplatform1)
     {
         this.physics.pause();
 
+        score = 0; // Reset da pontuação do jogador
         player.anims.play('hurt');
         this.scene.stop('GameScene');
         this.scene.start('GameOver');
