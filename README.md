@@ -11,8 +11,9 @@ Estou incluindo aqui as informações que você queria que estivessem no card do
   - Direita e Esquerda: andar na direção pressionada
   - Cima: pular
 
-5. Link do código (GitHub Individual): [Link para o código](https://github.com/Daniel00Meiches/Jogo-Individual/blob/main/Ponderada_W4/JOGO%20INDIVIDUAL/index.html)
+4. Link do código (GitHub Individual): [Link para o código](https://github.com/Daniel00Meiches/Jogo-Individual/blob/main/Ponderada_W4/JOGO%20INDIVIDUAL/index.html)
 
-6. Link da versão jogável (GitHub Pages): Eu consegui fazer um link no Github Pages, mas já que esse repositório também inclui os tutoriais, eu não sei fazer o site mostrar apenas o meu jogo: https://daniel00meiches.github.io/Jogo-Individual/
+5. Link da versão jogável (GitHub Pages): Eu consegui fazer um link no Github Pages, mas já que esse repositório também inclui os tutoriais, eu não sei fazer o site mostrar apenas o meu jogo: https://daniel00meiches.github.io/Jogo-Individual/
 
-7. Dúvidas, dificuldades ou comentários?
+6. Dúvidas, dificuldades ou comentários?
+Eu deveria ter administrado o meu tempo melhor nessa entrega
