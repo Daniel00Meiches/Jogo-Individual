@@ -1,4 +1,4 @@
-# Olá professor
+# Olá jogador
 
 Estou incluindo aqui as informações que você queria que estivessem no card do Adalove. Quando eu fiz a entrega do projeto, eu não tinha lido direito que era pra fazer isso lá e quando eu descobri eu já tinha movido o card, então eu espero que essa seja uma alternativa válida:
 
@@ -13,7 +13,7 @@ Estou incluindo aqui as informações que você queria que estivessem no card do
 
 4. Link do código (GitHub Individual): [Link para o código](https://github.com/Daniel00Meiches/Jogo-Individual/blob/main/Ponderada_W4/JOGO%20INDIVIDUAL/index.html)
 
-5. Link da versão jogável (GitHub Pages): Eu consegui fazer um link no Github Pages, mas já que esse repositório também inclui os tutoriais, eu não sei fazer o site mostrar apenas o meu jogo: https://daniel00meiches.github.io/Jogo-Individual/
+5. Link da versão jogável (GitHub Pages): Eu consegui fazer um link no Github Pages, mas já que esse repositório também inclui os tutoriais, eu não sei fazer o site mostrar apenas o meu jogo: [Link para](https://daniel00meiches.github.io/Jogo-Individual/Ponderada_W4/jogoIndividual/index.html)
 
 6. Dúvidas, dificuldades ou comentários?
 Eu deveria ter administrado o meu tempo melhor nessa entrega
